@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Employee Management App</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo">EMS</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="view-contacts.html">View Contacts</a></li>
+            <li><a href="new-contact.html">New Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="header">
-            <nav class="topnav">
-                <h2>Employee Management App</h2>
-                <a href="index.html">Home</a>
-                <span>|</span>
-                <a href="new-contact.html">New Contact</a>
-                <span>|</span>
-                <a href="view-contact.html">View All Contacts</a>
-            </nav>
-        </div>
+    <!-- Home Content -->
+    <section class="home">
+        <h1>Employee Management System</h1>
+        <p>
+            Welcome to the Employee Management System. This application allows you to 
+            manage employee contact information easily. You can add new employees, 
+            view existing contacts, and perform basic actions like editing or deleting entries.
+        </p>
+    </section>
 
-        <div class="content">
-
-            <div class="sidenav">
-                <nav class="sidebar">
-                    <div class="profile">
-                        <img class="profile-pic" src="images/download.jpg" alt="profile">
-                        <p>Victor Kimani <br><small>Online</small></p>
-                        
-                    </div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="new-contact.html">Add New Contact</a></li>
-                        <li><a href="view-contact.html">View All Contacts</a></li>
-                    </ul>
-                </nav>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="images/download.jpg" alt="Profile Image" class="profile-img">
+            <div class="profile-info">
+                <h3>John Doe</h3>
+                <span class="status online">● Online</span>
             </div>
-
-            <div class="dashboard">
-                <h2>Dashboard</h2>
-                <div class="card-positions">
-                    <h1>5</h1>
-                    <p>No. of Positions</p>
-                    <a href="#">More info</a>
-                </div>
-                <div class="card-contacts">
-                    <h1>50</h1>
-                    <p>No. of Contacts</p>
-                    <a href="#">More info</a>
-                </div>
-
         </div>
-    </body>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">Add New Contact</a></li>
+            <li><a href="view-contacts.html">View All Contacts</a></li>
+        </ul>
+        </aside>
+
+        <main class="dashboard">
+            <div class="card">
+                <h3>Positions</h3>
+                <p id="positionsCount">0</p>
+                <a href="#">More info +</a>
+            </div>
+            <div class="card">
+                <h3>Contacts</h3>
+                <p id="contactsCount">0</p>
+                <a href="#">More info +</a>
+            </div>
+            </main>
+
+    <script src="main.js"></script>
+</body>
 </html>
