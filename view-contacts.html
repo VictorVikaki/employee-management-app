@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo">EMS</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="view-contacts.html">View Contacts</a></li>
+            <li><a href="new-contact.html">New Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Table Container -->
+    <div class="container">
+        <h2>Employee Contacts</h2>
+
+        <table class="contacts-table">
+        <thead>
+            <tr>
+            <th>No. <span> </span></th>
+            <th>Name <span> </span></th>
+            <th>Phone <span> </span></th>
+            <th>Email <span> </span></th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JS fills this -->
+        </tbody>
+        </table>
+    </div>
+
+        <!-- Edit Contact Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Contact</h2>
+            <form id="editForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Department</label>
+                <input type="text" name="department" required>
+            </div>
+            <div class="form-group">
+                <label>Position</label>
+                <input type="text" name="position" required>
+            </div>
+            <button type="submit" class="btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
