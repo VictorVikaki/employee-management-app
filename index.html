@@ -6,11 +6,11 @@
     <title>Employee Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <h2 class="logo">EMS</h2>
+    <!--Navbar-->
+    <nav class="home-navbar">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="view-contacts.html">View Contacts</a></li>
@@ -18,17 +18,7 @@
         </ul>
     </nav>
 
-    <!-- Home Content -->
-    <section class="home">
-        <h1>Employee Management System</h1>
-        <p>
-            Welcome to the Employee Management System. This application allows you to 
-            manage employee contact information easily. You can add new employees, 
-            view existing contacts, and perform basic actions like editing or deleting entries.
-        </p>
-    </section>
-
-    <!-- Sidebar -->
+    <!--Sidebar-->
     <aside class="sidebar">
         <div class="profile">
             <img src="images/download.jpg" alt="Profile Image" class="profile-img">
@@ -44,18 +34,28 @@
         </ul>
         </aside>
 
-        <main class="dashboard">
-            <div class="card">
-                <h3>Positions</h3>
-                <p id="positionsCount">0</p>
-                <a href="#">More info +</a>
-            </div>
-            <div class="card">
-                <h3>Contacts</h3>
-                <p id="contactsCount">0</p>
-                <a href="#">More info +</a>
-            </div>
-            </main>
+    <!--Dashboard-->
+    <section class="home">
+        <h1>Employee Management System</h1>
+        <p>
+            Welcome to the Employee Management System. This application allows you to 
+            manage employee contact information easily. You can add new employees, 
+            view existing contacts, and perform basic actions like editing or deleting entries.
+        </p>
+    </section>
+
+    <main class="dashboard">
+        <div class="card">
+            <h3>Positions</h3>
+            <p id="positionCount"></p>
+            <a href="view-contacts.html">More info +</a>
+        </div>
+        <div class="card">
+            <h3>Contacts</h3>
+            <p id="employeeCount"></p>
+            <a href="view-contacts.html">More info +</a>
+        </div>
+    </main>
 
     <script src="main.js"></script>
 </body>
